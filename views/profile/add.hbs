@@ -1,0 +1,45 @@
+<h4>Update your profile</h4>
+<div class="row">
+    <form action="/update" method="POST" class="col s12" enctype="multipart/form-data">
+        <div class="row">
+            <div class="input-field">
+                <input type="text" id="name" name="name">
+                <label for="title">Name</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field">
+                <input type="text" id="Age" name="Age">
+                <label for="Age">Age</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <select id="Gender" name="Gender">
+                    <option value="Male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="Do not wish to answer">Do not wish to answer</option>
+                </select>
+                <label for="Gender">Gender</label>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="row">
+                <div> 
+                 <div class="custom-file mb-3">
+            <input type="file" name="file" id="file" class="custom-file-input" required>
+            <label for="file" class="custom-file-label">Choose File</label>
+          </div>
+            </div> 
+        </div>
+
+        
+
+        <div class="row">
+            <input type="submit" value="Save" class="btn">
+            <a href="/dashboard" class="btn red">Cancel</a>
+        </div>
+    </form>
+</div>
